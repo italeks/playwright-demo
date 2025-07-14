@@ -12,8 +12,8 @@ export class LoginPage {
   constructor(page: Page) {
     this.page = page
     this.usernameField = page.getByTestId('username-input')
-    this.passwordField = page.getByTestId('password-input');
-    this.signInButton = page.getByTestId('signIn-button');
+    this.passwordField = page.getByTestId('password-input')
+    this.signInButton = page.getByTestId('signIn-button')
   }
 
   async open() {
@@ -24,7 +24,7 @@ export class LoginPage {
     // actions
     await this.usernameField.fill('evolution-25')
     await this.passwordField.fill('dN2yKwZv')
-    await this.signInButton.click();
+    await this.signInButton.click()
     return new OrderPage(this.page)
   }
 }

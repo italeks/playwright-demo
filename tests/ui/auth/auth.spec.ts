@@ -9,8 +9,8 @@ test('Sign in button is disabled when an invalid username is entered', async ({ 
   await expect(signInButton).toBeDisabled()
 
   // check if error msg is present
-  const errorMessage = page.getByTestId('username-input-error').nth(0);
-  await expect(errorMessage).toBeVisible();
+  const errorMessage = page.getByTestId('username-input-error').nth(0)
+  await expect(errorMessage).toBeVisible()
 })
 
 // test('incorrect user/password', async ({ page }) => {

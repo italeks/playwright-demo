@@ -6,6 +6,6 @@ export class StatusPage {
 
   constructor(page: Page) {
     this.page = page
-    this.orderItemFirst = page.getByTestId('order-item-0');
+    this.orderItemFirst = page.getByTestId('order-item-0')
   }
 }

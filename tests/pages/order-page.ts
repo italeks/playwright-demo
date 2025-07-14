@@ -20,6 +20,6 @@ export class OrderPage {
   async createOrder(): Promise<void> {
     await this.clientName.fill('random-client-name')
     await this.clientPhone.fill('random-client-phone')
-    await this.createOrderButton.click();
+    await this.createOrderButton.click()
   }
 }
